@@ -16,6 +16,8 @@
   },
   "homepage": "https://github.com/shift02/shift02.github.io#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^2.2.0",
+    "require-dir": "^0.3.0"
   }
 }
