@@ -1,0 +1,23 @@
+#mods {
+	padding: 40px 0;
+	max-width: 1044px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mods-card-square>.mdl-card__title {
+	height: 176px;
+	color: #fff;
+}
+
+#ss3>.mdl-card__title {
+	color: #fff;
+	background: url('../assets/index/ss3_f.png') bottom right 15% no-repeat
+		#46B6AC;
+}
+
+#mce3>.mdl-card__title {
+	color: #fff;
+	background: url('../assets/index/mce3_n.png') bottom right 15% no-repeat
+		#46B6AC;
+}
