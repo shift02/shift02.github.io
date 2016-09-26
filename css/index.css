@@ -8,14 +8,9 @@
 .mods-card-square>.mdl-card__title {
 	height: 176px;
 	color: #fff;
-
+	background-size: cover;
 }
 
-#ss3>.mdl-card__title {
-	background: url('../assets/index/ss3_f.png') bottom right 15% no-repeat
-		#46B6AC;
-		background-size: cover;
-}
 
 #mce3>.mdl-card__title {
 	background: url('../assets/index/mce3_n.png') bottom right 15% no-repeat

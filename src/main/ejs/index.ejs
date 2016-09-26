@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%
+var data = jsonData;
+%>
 <%- include('./common/_head'); %>
 <link rel="stylesheet" href="./css/index.css">
-<title>Shift's Hat</title>
+<title><%- data.title %></title>
 </head>
 <body>
 
@@ -16,18 +19,19 @@
 
         <div class="mods-title mdl-typography--display-1-color-contrast">Mods</div>
         <div class="mdl-grid">
-          <div id="ss3" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mods-card-square mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title mdl-card--expand">
-              <h2 class="mdl-card__title-text">SextiarySector3</h2>
+          <% data.mods.forEach(function(mod){ %>
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mods-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand"
+            style="background: url(<%- mod.img %>) bottom right 15% no-repeat  #46B6AC;background-size: cover;">
+              <h2 class="mdl-card__title-text"><%- mod.name %></h2>
             </div>
             <div class="mdl-card__supporting-text">
             <span class="mdl-chip"> <span
-                class="mdl-chip__text">MC_Ver 1.10.2</span>
+                class="mdl-chip__text">MC_Ver <%- mod.version %></span>
               </span>
             </div>
             <div class="mdl-card__supporting-text">
-
-              Minecraftに第六次産業の概念を追加するMod
+              <%- mod.description %>
             </div>
             <div class="mdl-card__actions mdl-card--border">
               <a
@@ -35,24 +39,7 @@
                 詳細 </a>
             </div>
           </div>
-          <div id="mce3" class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mods-card-square mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title mdl-card--expand">
-              <h2 class="mdl-card__title-text">MCEconomy3</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-            <span class="mdl-chip"> <span
-                class="mdl-chip__text">MC_Ver 1.10.2</span>
-              </span>
-            </div>
-            <div class="mdl-card__supporting-text">
-            Minecraftに経済の概念を追加するMod
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a
-                class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                詳細 </a>
-            </div>
-          </div>
+          <% }) %>
         </div>
       </section>
 

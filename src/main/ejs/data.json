@@ -1,0 +1,31 @@
+{
+    "title":"Shift's Hat",
+    "mods":[
+            {
+                "name":"SextiarySector3",
+                "description":"Minecraftに第六次産業の概念を追加するMod",
+                "version":"1.10.2",
+                "img":"./assets/index/ss3_f.png"
+            },
+            {
+                "name":"MCEconomy3",
+                "description":"Minecraftに経済の概念を追加するMod",
+                "version":"1.10.2",
+                "img":"./assets/index/mce3_n.png"
+            },
+            {
+                "name":"AdditionalStatus",
+                "description":"水分とスタミナのステータスをプレイヤーに追加するMod",
+                "version":"1.10.2",
+                "img":"./assets/index/as_n.png"
+            },
+            {
+                "name":"SextiarySector2",
+                "description":"Minecraftに第六次産業の概念を追加するMod",
+                "version":"1.7.10",
+                "img":"./assets/index/ss2_s.png"
+            }
+            ]
+
+
+}
