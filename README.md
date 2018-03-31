@@ -1,5 +1,5 @@
 # shift02.github.io
 
-プログラムの紹介とか
+プログラムや作成したアプリの紹介とか
 
 Link http://shift02.github.io/
